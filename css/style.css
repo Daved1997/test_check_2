@@ -1,0 +1,260 @@
+body{
+    background-color: var(--whitecolor);
+}
+:root{
+    --whitecolor: #fff;
+    --blackcolor: #000;
+    --color1: #FAB019;
+    --color2: #1F4D6F;
+    --color3: #db9300;
+    --color4: #575757;
+    --color5: #2d2d35;
+    --colorbg: #dde4e9;
+}
+.footer{
+    background-color: var(--color5);
+}
+.footer_div1{
+    border-bottom: 2px solid var(--whitecolor);
+}
+.bg_color{
+    background-color: var(--colorbg);
+}
+.font_color2{
+    color: var(--color2);
+}
+.font_color4{
+    color: var(--color4);
+}
+.font_color1{
+    color: var(--whitecolor);
+}
+.bg_color_white{
+    background-color: var(--whitecolor);
+}
+.font_color3{
+    color: var(--color3);
+}
+.font_black{
+    color: var(--blackcolor);
+}
+.small_font{
+    font-size: 0.7rem;
+}
+
+
+.bg{
+    position: absolute;
+    z-index: -1;
+    background-color: var(--colorbg);
+    height: 103%;
+}
+.bg img{
+    width: 100%;
+    margin-top: 10vw;
+}
+.div_bg{
+    background-color: var(--color5);
+    height: 93vh;
+    border-radius: 0 0 1rem 0;
+    position: absolute;
+    z-index: -2;
+    height: 93%;
+}
+.nav{
+    border-bottom: 1px solid var(--whitecolor);
+}
+.nav_logo{
+    margin: auto;
+    width: fit-content;
+}
+.nav_logo img{
+    width: 9vw;
+}
+.nav_link a{
+    text-decoration: none;
+    color: var(--whitecolor);
+    margin-right: 3vw;
+}
+.nav_btn button{
+    background-color: var(--whitecolor);
+    border: 1px solid var(--color1);
+    border-radius: 0.2rem;
+    margin-right: 3vw;
+    font-size: smaller;
+    color: var(--color2);
+    padding: 0.2rem 1rem;
+}
+.nav_btn button:hover{
+    background-color: var(--color1);
+    transition: 0.5s;
+}
+.butn{
+    background-color: var(--whitecolor);
+    border: 1px solid var(--color1);
+    border-radius: 0.2rem;
+    margin-right: 3vw;
+    color: var(--color2);
+    padding: 0.2rem 1rem;
+
+}
+.butn:hover{
+    background-color: var(--color1);
+    transition: 0.5s;
+    font-size: large;
+}
+.sec_1_hedding{
+    margin-top: 6vw;
+    margin-left: 12vw;
+}
+.hedding{
+    color: var(--whitecolor);
+}
+.hedding h1{
+    font-size: 3vw;
+}
+.hedding h1::after{
+    content: "";
+    background-color: var(--color3);
+    position: absolute;
+    width: 0.6vw;
+    height: 50%;
+    border-radius: 0.5rem;
+    left: -3%;
+    top: 30%;
+}
+.sec_1_div1{
+    background-color: var(--whitecolor);
+    margin-left: 10vw;
+    margin-top: 3vw;
+    width: 64%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.sec_1_div1 img{
+    width: 3vw;
+    margin: 1vw;
+    height: 3vw;
+}
+.div_find{
+    width: fit-content;
+    padding: 3px;
+    margin: 3px;
+}
+.div_find::after{
+    content: "";
+    background-color: var(--color3);
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 0.5rem;
+    bottom: 0;
+    left: 0;
+}
+.sec_1_div2 p{
+    width: 60%;
+    margin-left: 10vw;
+    margin-top: 3vw;
+}
+.sec_1_div3_1{
+    width: 75%;
+    margin-left: 10vw;
+    margin-top: 3vw;
+}
+.sec_1_div3_1_1{
+    background-color: var(--whitecolor);
+    border-radius: 0.5rem;
+    border: 1px solid var(--color4);
+    width: 14rem;
+    height: 14rem;
+    padding: 1rem 2.5rem;
+}
+.grid_sec2{
+    height: 3rem;
+}
+.grid_sec3{
+    width: 12rem;
+}
+.grid_sec3_1{
+    width: 4rem;
+    background-color: #f2eddb;
+    border-radius: 0.3rem;
+}
+.sec_5_div{
+    background-color: var(--color3);
+    border-radius: 0.3rem;
+    width: 14rem;
+}
+.btn_zoom:hover{
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+/* sawipe */
+
+body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+  .swiper_slid{      
+    background: #62637b;
+    border-radius: 0.5rem;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-next::after{
+      display: none;
+  }
+  .swiper-button-prev::after{
+    display: none;
+}
+.swiper_btn{
+    color: #2d2d35;
+}
+.swiper_btn:hover{
+    color: #757575;
+}
