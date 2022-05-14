@@ -253,8 +253,16 @@ body {
     display: none;
 }
 .swiper_btn{
-    color: #2d2d35;
+    color: #2d2d35 !important;
+    top: calc(100% + 20px) !important;
 }
 .swiper_btn:hover{
-    color: #757575;
+    color: #757575 !important;
+}
+
+.swiper-button-next {
+    right: calc(50% - 100px) !important;
+}
+.swiper-button-prev {
+    left: calc(50% - 100px) !important;
 }
