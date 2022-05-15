@@ -14,42 +14,61 @@
     <title>Homepage Desktop</title>
   </head>
   <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class=" col-12 mx-auto py-2">
+            <div class="align-items-center text-center nav_link">
+                <div class=""><img src="assets/logo.png"></div>
+                <div class="py-2"><a class="m-auto" href="#">Home</a></div>
+                <div class="py-2"><a class="m-auto" href="">Student</a></div>
+                <div class="py-2"><a class="m-auto" href="">Recruitment partner</a></div>
+                <div class="py-2"><a class="m-auto" href="">Institution</a></div>
+            </div>
+            <div class="d-flex my-auto ms-auto align-items-center nav_btn">
+                <button class="my-5 m-auto ">Register</button>
+                <button class="my-5 m-auto ">Log In</button>
+            </div>
+        </div>
+    </div>
     <section class="position-relative">
         <div class="bg">
             <div class="col-9 div_bg"></div>
             <img src="assets/sec_1_bg.png">
         </div>
-        <div class="row nav col-12 mx-auto py-2">
-            <div class="col-9 d-flex align-items-center nav_link">
-                <div class="nav_logo"><img src="assets/logo.png"></div>
-                <a href="#">Home</a>
-                <a href="">Student</a>
-                <a href="">Recruitment partner</a>
-                <a href="">Institution</a>
+        <div class="row nav col-12 mx-auto fixed-top">
+            <div class="py-2 col-9 d-flex align-items-center nav_link" style="background-color: #2d2d35;">
+                <div class="nav_logo m-md-auto"><img src="assets/logo.png"></div>
+                <a class="d-none d-md-block" href="#">Home</a>
+                <a class="d-none d-md-block" href="">Student</a>
+                <a class="d-none d-md-block" href="">Recruitment partner</a>
+                <a class="d-none d-md-block" href="">Institution</a>
             </div>
-            <div class="col-3 d-flex align-items-center nav_btn">
-                <button>Register</button>
-                <button>Log In</button>
+            <div class="py-2 col-3 d-flex ms-auto align-items-center nav_butn" style="background-color: #dde4e9; height: 100%;">
+                <button class="my-3 my-lg-4 d-none d-md-block">Register</button>
+                <button class="my-3 my-lg-4 d-none d-md-block">Log In</button>
+                <div class="d-block d-md-none ms-auto">
+                    <button class="side_nav" onclick="openNav()" ><i class="bi bi-list"></i></button>
+                </div>
             </div>
         </div>
-        <div class="col-12 mb-5">
+        <div class="col-12 mb-5 pt-5">
             <div class="col-12 col-md-9">
-                <div class="hedding sec_1_hedding position-relative">
+                <div class="hedding col-7 col-md-12 sec_1_hedding position-relative">
                     <h1>A popular platfrom for taking your career to <br> next level.</h1>
                 </div>
-                <div class="sec_1_div1">
-                    <div class="mx-auto div_find position-relative"><h3 class="fs-4">Find your Course</h3></div>
-                    <div class="d-flex justify-content-between align-items-center p-3">
-                        <div class="d-flex">
+                <div class="sec_1_div1 col-10 col-md-7">
+                    <div class="mx-auto div_find position-relative"><h3 class="fs-5 fs-md-4">Find your Course</h3></div>
+                    <div class="d-flex flex-wrap p-3">
+                        <div class="d-flex m-auto align-items-center">
                             <img src="assets/GraduationScroll.png">
                             <p class="m-auto font_color4">Drgree</p>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex m-auto align-items-center">
                             <img src="assets/Location.png">
                             <p class="m-auto font_color4">Location</p>
                         </div>
-                        <div>
-                            <button class="butn">Search</button>
+                        <div class="m-auto">
+                            <button class="butn mx-auto">Search</button>
                         </div>
                     </div>
                 </div>
@@ -137,11 +156,11 @@
     </section>
     <section>
         <div class="col-12 bg_color py-5">
-            <div class="col-10 d-flex m-auto">
-                <div class="col-6">
+            <div class="col-10 d-md-flex m-auto">
+                <div class="col-12 col-md-6">
                     <img src="assets/sec4_img.png" style="width: 100%;">
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="hedding mb-3 ms-5 p-2 nav_logo position-relative">
                         <h1 class="font_color2"> <span class="font_black fs-6 fw-light align-middle">Talk To</span><br>Our Consultant</h1>
                     </div>
@@ -185,22 +204,22 @@
                 <h1 class="font_color2"> <span class="font_black fs-6 fw-light align-middle">Reason</span> <br> Why Choose Us</h1>
             </div>
             <div class="col-10 d-flex flex-wrap m-auto">
-                <div class="sec_5_div mx-auto py-3 px-5 m-3 text-center shadow">
+                <div class="sec_5_div mx-auto py-3 px-4 px-md-5 m-3 text-center shadow">
                     <div class="col-8 m-auto"><img src="assets/GoodQuality.png" class="col-12 mb-3"></div>
                     <h2>253+</h2>
                     <p>Quality Service</p>
                 </div>
-                <div class="sec_5_div mx-auto py-3 px-5 m-3 text-center shadow">
+                <div class="sec_5_div mx-auto py-3 px-4 px-md-5 m-3 text-center shadow">
                     <div class="col-8 m-auto"><img src="assets/Woman.png" class="col-12 mb-3"></div>
                     <h2>150+</h2>
                     <p>Success Stories</p>
                 </div>
-                <div class="sec_5_div mx-auto py-3 px-5 m-3 text-center shadow">
+                <div class="sec_5_div mx-auto py-3 px-4 px-md-5 m-3 text-center shadow">
                     <div class="col-8 m-auto"><img src="assets/Medal.png" class="col-12 mb-3"></div>
                     <h2>10+</h2>
                     <p>Awards Win</p>
                 </div>
-                <div class="sec_5_div mx-auto py-3 px-5 m-3 text-center shadow">
+                <div class="sec_5_div mx-auto py-3 px-4 px-md-5 m-3 text-center shadow">
                     <div class="col-8 m-auto"><img src="assets/Meeting.png" class="col-12 mb-3"></div>
                     <h2>100+</h2>
                     <p>Trusted Clients</p>
@@ -215,8 +234,8 @@
                     <h1 class="font_color2"> <span class="font_black fs-6 fw-light align-middle">Simple,Fast & Easy</span> <br> Student Portal</h1>
                 </div>
             </dvi>
-            <div class="col-10 m-auto d-flex">
-                <div class="col-6">
+            <div class="col-10 m-auto d-md-flex">
+                <div class="col-md-6">
                     <h1 class="font_color2">Manage all</h1>
                     <ul class="font_color2 col-11 pt-2 pb-5">
                         <li>Manage all the courses , saved , documents, applications, visa documents etc with simple, 
@@ -226,10 +245,10 @@
                         <li>There are many variations of Lorem Ipsum available, but the majority have suffered.</li>
                     </ul>
                     <div class="btn_zoom" style="width: fit-content;">
-                        <button class="butn">Let's Go &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-arrow-right align-middle"></i></button>
+                        <button class="butn my-3">Let's Go &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-arrow-right align-middle"></i></button>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <img src="assets/sec5_img.png" class="col-12">
                 </div>
             </div>
@@ -386,11 +405,11 @@
                     <h1 class="font_color2"> <span class="font_black fs-6 fw-light align-middle">Across GLobe</span> <br> Study Around World</h1>
                 </div>
             </dvi>
-            <div class="col-10 m-auto d-flex">
-                <div class="col-6">
+            <div class="col-10 m-auto d-md-flex">
+                <div class="col-md-6">
                     <img src="assets/sec7_img.png" class="col-12">
                 </div>
-                <div class="col-6 p-3">
+                <div class="col-md-6 p-3">
                     <p class="fs-6 p-3">Study all around the world without any problem and take your career to next level.</p>
                     <div class="position-relative">
                         <div class="swiper mySwiperFlag">
@@ -406,9 +425,9 @@
                               <div class="swiper-slide"><img src="assets/flag4.png" alt=""></div>
                             </div>
                           </div>
-                          <div class="swiper-pagination" style="top: 100%"></div>
+                          <div class="swiper-pagination" style="top: 150%"></div>
                     </div>
-                    <div class="btn_zoom p-3 mt-2" style="width: fit-content;">
+                    <div class="btn_zoom p-3 mt-5" style="width: fit-content;">
                         <button class="butn">Let's Go &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-arrow-right align-middle"></i></button>
                     </div>
                 </div>
@@ -416,11 +435,11 @@
         </div>
     </section>
     <section>
-        <div class="col-12 footer pt-5">
+        <div class="col-12 footer pt-3 pt-sm-5">
             <div class="col-11 footer_div1 d-flex m-auto">
                 <div class="col-2 text-center mx-auto">
                     <img src="assets/logo.png" class="col-10">
-                    <p class="font_color1 mt-3 small_font">There are many variations of passages of Lorem Ipsum available.</p>
+                    <p class="font_color1 mt-3 d-none d-sm-block small_font">There are many variations of passages of Lorem Ipsum available.</p>
                     <div class="d-flex col-10 m-auto pb-3">
                         <div class="col-2 m-auto"><img src="assets/facebook.png" class="col-12"></div>
                         <div class="col-2 m-auto"><img src="assets/Instagram.png" class="col-12"></div>
@@ -428,7 +447,7 @@
                         <div class="col-2 m-auto"><img src="assets/linkedin.png" class="col-12"></div>
                     </div>
                 </div>
-                <div class="col-2 small_font mt-4 mx-auto">
+                <div class="col-2 d-none d-sm-block small_font mt-4 mx-auto">
                     <ul class="font_color1 list-unstyled">
                         <li class="fw-bold ">Top Universities</li>
                         <li class="mt-3">MIT - USA</li>
@@ -438,7 +457,7 @@
                         <li class="mt-1">IIT - Delhi</li>
                       </ul>
                 </div>
-                <div class="col-2 small_font mt-4 mx-auto">
+                <div class="col-2 d-none d-sm-block small_font mt-4 mx-auto">
                     <ul class="font_color1 list-unstyled">
                         <li class="fw-bold ">Top Locations</li>
                         <li class="mt-3">Study in USA</li>
@@ -449,7 +468,7 @@
                         <li class="mt-1">Study in England</li>
                       </ul>
                 </div>
-                <div class="col-2 small_font mt-4 mx-auto">
+                <div class="col-2 d-none d-sm-block small_font mt-4 mx-auto">
                     <ul class="font_color1 list-unstyled">
                         <li class="fw-bold ">Quick Links</li>
                         <li class="mt-3">Home</li>
@@ -458,7 +477,7 @@
                         <li class="mt-1">Institution</li>
                       </ul>
                 </div>
-                <div class="col-2 small_font mt-4 mx-auto">
+                <div class="col-2 d-none d-sm-block small_font mt-4 mx-auto">
                     <ul class="font_color1 list-unstyled">
                         <li class="fw-bold ">Contact Us</li>
                         <li class="mt-3">Phone no</li>
@@ -479,14 +498,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 10,
             slidesPerGroup: 3,
             loop: true,
             loopFillGroupWithBlank: true,
             pagination: {
             el: ".swiper-pagination",
             clickable: true,
+            },
+            breakpoints:{
+                767:{
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
             },
             navigation: {
             nextEl: ".swiper-button-next",
@@ -511,6 +536,8 @@
        },
  });
 </script>
+    <script src="js/script.js"></script>
+
 
 
   </body>
